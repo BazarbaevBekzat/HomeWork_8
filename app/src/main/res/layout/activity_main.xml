@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/btn_search"
+            app:layout_constraintStart_toStartOf="@id/btn_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/policies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:text="Policies"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint" />
+
+    <Button
+        android:id="@+id/policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/white"
+        android:gravity="fill_vertical"
+        android:padding="10dp"
+        android:paddingStart="24dp"
+        android:text="Policy"
+        android:textColor="@color/grey"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/policies" />
+
+    <Button
+        android:id="@+id/btn_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/white"
+        android:gravity="fill_vertical"
+        android:padding="10dp"
+        android:paddingStart="24dp"
+        android:text="Product Category"
+        android:textColor="@color/grey"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/policy" />
+
+    <Button
+        android:id="@+id/btn_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/white"
+        android:gravity="fill_vertical"
+        android:padding="10dp"
+        android:paddingStart="24dp"
+        android:text="Origin country"
+        android:textColor="@color/grey"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_product" />
+
+    <Button
+        android:id="@+id/btn_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/white"
+        android:gravity="fill_vertical"
+        android:padding="10dp"
+        android:paddingStart="24dp"
+        android:text="Brand"
+        android:textColor="@color/grey"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_origin" />
+
+
+    <Button
+        android:id="@+id/right_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/right"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/policy"
+        app:layout_constraintTop_toTopOf="@id/policy"
+        app:layout_constraintBottom_toBottomOf="@id/policy"
+        android:layout_marginEnd="12dp"/>
+
+
+    <Button
+        android:id="@+id/right_2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/right"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/btn_product"
+        app:layout_constraintTop_toTopOf="@id/btn_product"
+        app:layout_constraintBottom_toBottomOf="@id/btn_product"
+        android:layout_marginEnd="12dp"/>
+
+    <Button
+        android:id="@+id/right_3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/right"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/btn_origin"
+        app:layout_constraintTop_toTopOf="@id/btn_origin"
+        app:layout_constraintBottom_toBottomOf="@id/btn_origin"
+        android:layout_marginEnd="12dp"/>
+
+    <Button
+        android:id="@+id/right_4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/right"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/btn_brand"
+        app:layout_constraintTop_toTopOf="@id/btn_brand"
+        app:layout_constraintBottom_toBottomOf="@id/btn_brand"
+        android:layout_marginEnd="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:gravity="center"
+        android:hint="Current Policies"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_brand" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/red_white"
+        android:text="Export as CVS"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_current" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
